@@ -1,35 +1,42 @@
-# App/UI
-streamlit>=1.36
-streamlit-authenticator>=0.3.2
-streamlit-option-menu>=0.3.13
-streamlit-chat>=0.1.1  # optional; Streamlit also has built-in chat_input()
+# ---------------------------
+# Core App / UI
+# ---------------------------
+streamlit
+streamlit-authenticator
+streamlit-option-menu
+streamlit-chat  # optional; Streamlit also has built-in st.chat_input()
 
-# LangChain + OpenAI
-langchain>=0.2.12
-langchain-community>=0.2.10
-langchain-google-genai>=1.0.7
-google-generativeai>=0.7.2
-tiktoken>=0.7.0
-pydantic>=2.8.2
+# ---------------------------
+# LangChain + LLM Providers
+# ---------------------------
+langchain
+langchain-community
+langchain-google-genai
+google-generativeai
+openai
+tiktoken
+pydantic
 
-# Data & DB
-pymongo>=4.8.0
+# ---------------------------
+# Database & Auth
+# ---------------------------
+pymongo
+python-jose[cryptography]
+bcrypt
 
+# ---------------------------
+# ML / NLP / Search
+# ---------------------------
+faiss-cpu
+sentence-transformers
+duckduckgo-search
+wikipedia
 
-# Auth & security
-python-jose[cryptography]>=3.3.0
-bcrypt>=4.1.3
+# ---------------------------
+# Utilities
+# ---------------------------
+python-dotenv
+Pillow
+plotly
+protobuf
 
-# ML / Search / NLP
-faiss-cpu>=1.8.0.post1
-sentence-transformers>=3.0.1
-duckduckgo-search>=6.2.6
-wikipedia>=1.4.0
-
-# Utils
-python-dotenv>=1.0.1
-Pillow>=10.4.0
-plotly>=5.23.0
-
-# Pin for google client compat
-protobuf>=4.25.3
